@@ -1,0 +1,4 @@
+-gui
+-msgset "C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/promote.xml"
+
+-freq 0
