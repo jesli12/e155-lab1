@@ -5,9 +5,8 @@
 
 module counter_2_4Hz
 	#(parameter WIDTH = 25,
-		EN = 1,
 		MAX_COUNT = 10_000_000) (
-	input   logic   clk, rst,
+	input   logic   clk, rst, en,
 	output  logic   led
 );
 
@@ -19,9 +18,9 @@ module counter_2_4Hz
 				counter <= 0;
 				led_state <= 0;
 			end
-			else if (EN) begin
+			else if (en) begin
 				if (counter >= MAX_COUNT) begin
-					led_state <= ~led_state; // toggles led state on or off once cycle time up
+					led_state <= ~led_state; // toggles led state on or off once desired cycle time up
 					counter <= 0;
 				end
 				else counter <= counter + 1'b1;

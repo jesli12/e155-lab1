@@ -4,6 +4,8 @@
 // It tests every input combination for a 4 bit binary s that controls a 7 segment display 
 // Note: applied output logic 0 turns on the segment (common anode display)
 
+`timescale 1 ns/1 ns
+
 module lab1_switch_to_display_tb();
 	logic [3:0] s;
 	logic [6:0] seg;
@@ -126,7 +128,7 @@ module lab1_switch_to_display_tb();
 			$display ("Success: 7-segment display F (15) passed.");
 		else $error("7-segment display F (15) failed.");
 		
-		#10;
+		#100;
 		$stop;
 	end
 endmodule

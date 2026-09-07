@@ -7,12 +7,13 @@
 
 module lab1_jl(
 	input   logic   [3:0] s,
+	input   logic reset,
+	input   logic enable,
 	output  logic [2:0] led,
 	output  logic [6:0] seg
 );
 
 	logic int_osc;
-	const logic reset = 1'b0; // make into button input later?
 	
 	// Internal high-speed oscillator, 48 MHz clock generated in FPGA by HSOSC primitive
 	HSOSC hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_osc));
@@ -30,6 +31,7 @@ module lab1_jl(
 	counter_2_4Hz blinker(
 		.clk (int_osc), 
 		.rst (reset),  
+		.en (enable),
 		.led (led[2])
 	);
 	

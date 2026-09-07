@@ -8,7 +8,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2026.1.0.37.0
-Mapped on: Sun Sep  6 23:53:00 2026
+Mapped on: Mon Sep  7 02:21:20 2026
 
 Design Information
 ------------------
@@ -22,18 +22,18 @@ Design Summary
 
    Number of slice registers:  26 out of  5280 (<1%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:            43 out of  5280 (1%)
-      Number of logic LUT4s:              17
+   Number of LUT4s:            69 out of  5280 (1%)
+      Number of logic LUT4s:              43
       Number of ripple logic:             13 (26 LUT4s)
-   Number of IO sites used:   14 out of 39 (36%)
-      Number of IO sites used for general PIO: 14
+   Number of IO sites used:   16 out of 39 (41%)
+      Number of IO sites used for general PIO: 16
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 14 out of 36 (39%)
+      Number of IO sites used for PIO+I3C: 16 out of 36 (44%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 14 out of 39 (36%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 16 out of 39 (41%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  1 out of 1 (100%)
@@ -47,19 +47,19 @@ Design Summary
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  1
-      Net int_osc: 14 loads, 14 rising, 0 falling (Driver: Pin hf_osc/CLKHF)
-   Number of Clock Enables:  1
+      Net int_osc: 26 loads, 26 rising, 0 falling (Driver: Pin hf_osc/CLKHF)
+   Number of Clock Enables:  2
       Net VCC_net: 1 loads, 0 SLICEs
+      Net n247: 26 loads, 26 SLICEs
    Number of LSRs:  1
-      Net blinker.n3: 13 loads, 13 SLICEs
+      Pin reset: 26 loads, 26 SLICEs (Net: reset_c)
    Top 10 highest fanout non-clock nets:
-      Net blinker.n3: 14 loads
+      Net reset_c: 27 loads
+      Net blinker.n3: 26 loads
+      Net n247: 26 loads
       Net s_c[0]: 8 loads
       Net s_c[1]: 8 loads
       Net s_c[2]: 8 loads
-      Net s_c[3]: 8 loads
-      Net VCC_net: 3 loads
-      Net blinker.counter[15]: 2 loads
 
                                     Page 1
 
@@ -69,9 +69,10 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net blinker.counter[16]: 2 loads
-      Net blinker.n189: 2 loads
-      Net blinker.n191: 2 loads
+      Net s_c[3]: 8 loads
+      Net VCC_net: 3 loads
+      Net blinker.counter[13]: 2 loads
+      Net blinker.counter[14]: 2 loads
 
 
 
@@ -101,6 +102,10 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | s[0]                | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| reset               | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| enable              | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 | led[2]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | led[1]              | OUTPUT    |           |       |       |           |
@@ -122,17 +127,17 @@ IO (PIO) Attributes
 | seg[0]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
-Removed logic
--------------
-
-Block i1 was optimized away.
-
 
                                     Page 2
 
 
 
 
+
+Removed logic
+-------------
+
+Block i1 was optimized away.
 
 OSC Summary
 -----------
@@ -161,13 +166,8 @@ Run Time and Memory Usage
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 64 MB
-Checksum -- map: 47bff74479a42eda1b6529caa3f7a643b849c69
-
-
-
-
-
+   Peak Memory Usage: 65 MB
+Checksum -- map: 16db9fedc97e035de6f1095398da85c146e822c8
 
 
 
