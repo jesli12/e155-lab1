@@ -1,5 +1,5 @@
 // Jessica Li  |  jesli@g.hmc.edu
-// 09/05/2026
+// 09/06/2026
 // This is the top-level module, taking input from 4 switches and output on 3 LEDs and a 7 segment display.
 // It contains internal clock initialization (high-speed oscillator) and the switch-to-LED logic.
 // The top-level module also uses another module for switch-to-7-segment display, and another module for the counter.
@@ -12,7 +12,7 @@ module lab1_jl(
 );
 
 	logic int_osc;
-	const logic reset = 1'b1; // make into button input later?
+	const logic reset = 1'b0; // make into button input later?
 	
 	// Internal high-speed oscillator, 48 MHz clock generated in FPGA by HSOSC primitive
 	HSOSC hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_osc));

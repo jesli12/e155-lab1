@@ -15,6 +15,13 @@ SUB MODULES
                   switch_to_display         1
                               TOTAL        72
 ----------------------------------------------------------------------
+Report for cell switch_to_display.v1
+Instance Path : seven_seg
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7           43.8
+                              TOTAL         7
+----------------------------------------------------------------------
 Report for cell counter_2_4Hz.v1
 Instance Path : blinker
                                   Cell usage:
@@ -23,10 +30,3 @@ Instance Path : blinker
                             FD1P3XZ        26          100.0
                                LUT4         7           43.8
                               TOTAL        46
-----------------------------------------------------------------------
-Report for cell switch_to_display.v1
-Instance Path : seven_seg
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         7           43.8
-                              TOTAL         7

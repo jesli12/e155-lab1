@@ -13,6 +13,13 @@ SUB MODULES
                          counter_2_4Hz	          1        76.7
                      switch_to_display	          1        16.3
 ---------------------------------------------------
+Report for cell switch_to_display
+   Instance path: lab1_jl/seven_seg
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7        16.3
+                               LUTGATE	          7        41.2
+---------------------------------------------------
 Report for cell counter_2_4Hz
    Instance path: lab1_jl/blinker
                      Cell usage:
@@ -21,10 +28,3 @@ Report for cell counter_2_4Hz
                                LUTGATE	          7        41.2
                                 LUTCCU	         26        100.0
                                 PFUREG	         26        100.0
----------------------------------------------------
-Report for cell switch_to_display
-   Instance path: lab1_jl/seven_seg
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  LUT4	          7        16.3
-                               LUTGATE	          7        41.2
