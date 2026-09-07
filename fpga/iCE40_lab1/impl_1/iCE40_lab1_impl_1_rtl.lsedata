@@ -1,7 +1,7 @@
 <top name = "lab1_jl"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
-    <clockitem name = "reset"  type = "port" />
+    <clockitem name = "int_osc"  type = "net" />
 </clocks>
 
 <!--

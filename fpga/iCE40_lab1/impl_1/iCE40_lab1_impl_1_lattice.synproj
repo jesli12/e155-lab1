@@ -40,9 +40,9 @@
 -lib pmi -vhd "C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd"
 
 # Source Files
+-sver "../source/impl_1/counter_2_4Hz.sv"
 -sver "../source/impl_1/lab1_jl.sv"
 -sver "../source/impl_1/switch_to_display.sv"
--sver "../source/impl_1/counter_2_4Hz.sv"
 -path ".."
 -top lab1_jl
 # Output Configuration
