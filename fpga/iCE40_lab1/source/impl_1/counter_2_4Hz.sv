@@ -11,8 +11,8 @@ module counter_2_4Hz
 );
 	// logic pulse;
 	logic led_state = 0;
-	logic [WIDTH:0] counter = 0;
-	const logic [WIDTH:0] max_count = 10_000_000; // max counter 10 million to convert 10 million cycles into one cycle (at a pace of 2.4 Hz)
+	logic [WIDTH-1:0] counter = 0;
+	const logic [WIDTH-1:0] max_count = 10_000_000; // max counter 10 million to convert 10 million cycles into one cycle (at a pace of 2.4 Hz)
 	
 	always_ff @(posedge clk) begin
 			if (rst == 0) begin
