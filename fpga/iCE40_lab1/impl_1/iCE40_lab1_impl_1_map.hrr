@@ -3,28 +3,28 @@ Report for cell lab1_jl
    Instance path: lab1_jl
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         45        100.0
+                                  LUT4	         43        100.0
                                LUTGATE	         17        100.0
-                                LUTCCU	         28        100.0
+                                LUTCCU	         26        100.0
                                  IOBUF	         14        100.0
-                                PFUREG	         27        100.0
+                                PFUREG	         26        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                         counter_2_4Hz	          1        77.8
-                     switch_to_display	          1        15.6
+                         counter_2_4Hz	          1        76.7
+                     switch_to_display	          1        16.3
 ---------------------------------------------------
 Report for cell counter_2_4Hz
    Instance path: lab1_jl/blinker
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         35        77.8
+                                  LUT4	         33        76.7
                                LUTGATE	          7        41.2
-                                LUTCCU	         28        100.0
-                                PFUREG	         27        100.0
+                                LUTCCU	         26        100.0
+                                PFUREG	         26        100.0
 ---------------------------------------------------
 Report for cell switch_to_display
    Instance path: lab1_jl/seven_seg
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          7        15.6
+                                  LUT4	          7        16.3
                                LUTGATE	          7        41.2

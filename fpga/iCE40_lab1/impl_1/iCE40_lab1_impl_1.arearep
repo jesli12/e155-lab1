@@ -1,11 +1,11 @@
 ----------------------------------------------------------------------
 Report for cell lab1_jl.TECH
-Register bits:  27 of 5280 (0.511%)
+Register bits:  26 of 5280 (0.492%)
 I/O cells:      14
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2        14          100.0
-                            FD1P3XZ        27          100.0
+                               CCU2        13          100.0
+                            FD1P3XZ        26          100.0
                          HSOSC_CORE         1          100.0
                                  IB         4          100.0
                                LUT4        16          100.0
@@ -13,16 +13,16 @@ I/O cells:      14
 SUB MODULES
                       counter_2_4Hz         1
                   switch_to_display         1
-                              TOTAL        74
+                              TOTAL        72
 ----------------------------------------------------------------------
 Report for cell counter_2_4Hz.v1
 Instance Path : blinker
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        14          100.0
-                            FD1P3XZ        27          100.0
+                                FA2        13          100.0
+                            FD1P3XZ        26          100.0
                                LUT4         7           43.8
-                              TOTAL        48
+                              TOTAL        46
 ----------------------------------------------------------------------
 Report for cell switch_to_display.v1
 Instance Path : seven_seg

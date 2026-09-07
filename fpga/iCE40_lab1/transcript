@@ -13,65 +13,25 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-vlog -reportprogress 300 -work work C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/counter_2_4Hz.sv
+vlog -reportprogress 300 -work work C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/counter_2_4Hz.sv C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_jl.sv C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/switch_to_display.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 17:48:08 on Sep 06,2026
-# vlog -reportprogress 300 -work work C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/counter_2_4Hz.sv 
+# Start time: 19:14:33 on Sep 06,2026
+# vlog -reportprogress 300 -work work C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/counter_2_4Hz.sv C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_jl.sv C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/switch_to_display.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module counter_2_4Hz
-# 
-# Top level modules:
-# 	counter_2_4Hz
-# End time: 17:48:08 on Sep 06,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_jl.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 17:48:08 on Sep 06,2026
-# vlog -reportprogress 300 -work work C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_jl.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module lab1_jl
-# 
-# Top level modules:
-# 	lab1_jl
-# End time: 17:48:08 on Sep 06,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/switch_to_display.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 17:48:08 on Sep 06,2026
-# vlog -reportprogress 300 -work work C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/switch_to_display.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module switch_to_display
 # 
 # Top level modules:
-# 	switch_to_display
-# End time: 17:48:08 on Sep 06,2026, Elapsed time: 0:00:00
+# 	lab1_jl
+# End time: 19:14:33 on Sep 06,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-#  Trace back: can't read "_clients()": no such variable
-#     while executing
-# "set _currObj    $_clients($cid)"
-#     (object "::.bookmarkmgr" method "::vsimwidgets::bookmarkmgr::_setcurrent" body line 11)
-#     invoked from within
-# "_setcurrent $cid"
-#     (object "::.bookmarkmgr" method "::vsimwidgets::bookmarkmgr::_menu_prepost" body line 16)
-#     invoked from within
-# "::.bookmarkmgr _menu_prepost .mBar.bookmarks 1 {} 1"
-#     (in namespace inscope "::vsimwidgets::bookmarkmgr" script line 1)
-#     invoked from within
-# "namespace inscope ::vsimwidgets::bookmarkmgr {::.bookmarkmgr _menu_prepost .mBar.bookmarks 1 {} 1}"
-#     ("eval" body line 1)
-#     invoked from within
-# "eval $post_cmd"
-#     (procedure "::Vsimmenu::DefaultMenuPostCmd" line 41)
-#     invoked from within
-# "::Vsimmenu::DefaultMenuPostCmd .mBar.bookmarks {namespace inscope ::vsimwidgets::bookmarkmgr {::.bookmarkmgr _menu_prepost .mBar.bookmarks 1 {} 1}} Se..."
-#     (menu preprocess)
-#    <2:C:/lscc/radiant/2026.1/questasim/win64/tk8.6/bgerror.tcl:106: ::tkerror {can't read "_clients()": no such variable}
-#    <1:eval:1: ::tk::dialog::error::bgerror {can't read "_clients()": no such variable}
+# Optimization canceled
 vsim -gui work.lab1_jl -L iCE40UP -voptargs=+acc
 # ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # vsim -gui work.lab1_jl -L iCE40UP -voptargs="+acc" 
-# Start time: 17:50:55 on Sep 06,2026
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 19:15:25 on Sep 06,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
 # ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
@@ -80,15 +40,93 @@ vsim -gui work.lab1_jl -L iCE40UP -voptargs=+acc
 # Loading iCE40UP.HSOSC(fast)
 # Loading work.switch_to_display(fast)
 # Loading work.counter_2_4Hz(fast)
-# Load canceled
+add wave -position end  sim:/lab1_jl/seg
 add wave -position end  sim:/lab1_jl/s
 add wave -position end  sim:/lab1_jl/led
-add wave -position end  sim:/lab1_jl/seg
 add wave -position end  sim:/lab1_jl/int_osc
+force s 0000
+run 10
+force s 0001
+run 100
+force s 1101
+run 100
+force s 1111
+run 100
+force s 1111
+run 10
+force s 1101
+run 10
+force s 0011
+run -over
+run 100
+reset run
+# Invalid parameter(s)
+# RESET { SESSION }
+run reset
+# Invalid time value: reset
+reset time
+# Invalid parameter(s)
+# RESET { SESSION }
+reset session
+# Invalid parameter(s)
+# Reset the session subsytem hardware and software to known initial values.
+# 
+# RESET SESSION {sessionname | sessionid} [/SERVER:servername] [/V]
+# 
+#   sessionname         Identifies the session with name sessionname.
+#   sessionid           Identifies the session with ID sessionid.
+#   /SERVER:servername  The server containing the session (default is current).
+#   /V                  Display additional information.
+# 
+reset
+# Invalid parameter(s)
+# RESET { SESSION }
+force s 1100
+run 10
+force s 1010
+change s 1010
+# ** UI-Msg (Error): (vsim-3661) Unable to change 's': Use the force command to change nets.
+# 
+force s 1010
+force s 0001
+force s 1010
+run 100
+add wave -position end  sim:/lab1_jl/seg
+add wave -position end  sim:/lab1_jl/s
+add wave -position end  sim:/lab1_jl/led
+add wave -position end  sim:/lab1_jl/int_osc
+# Causality operation skipped due to absence of debug database file
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_jl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.switch_to_display(fast)
+# Loading work.counter_2_4Hz(fast)
 add wave -position end  sim:/lab1_jl/reset
-run
-run -all
-# Break key hit
-# Simulation stop requested.
-# End time: 17:58:17 on Sep 06,2026, Elapsed time: 0:07:22
-# Errors: 0, Warnings: 1
+force s 1101
+run 10
+run 90
+force s 1111
+run 100
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lab1_jl(fast)
+# Loading iCE40UP.HSOSC(fast)
+# Loading work.switch_to_display(fast)
+# Loading work.counter_2_4Hz(fast)
+force s 1010
+run 100
+force s 4'1010
+# Invalid radix for based number: 1.
+# ** UI-Msg (Error): (vsim-4011) Invalid force value: 4'1010.
+# 
+force s 4b'1010
+# Invalid radix for based number: '.
+# ** UI-Msg (Error): (vsim-4011) Invalid force value: 4b'1010.
+# 
+force s 4'b1010
+run 100

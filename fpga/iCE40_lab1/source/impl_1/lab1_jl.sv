@@ -12,7 +12,7 @@ module lab1_jl(
 );
 
 	logic int_osc;
-	assign reset = 1'b1; // make into button input later?
+	const logic reset = 1'b1; // make into button input later?
 	
 	// Internal high-speed oscillator, 48 MHz clock generated in FPGA by HSOSC primitive
 	HSOSC hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_osc));
