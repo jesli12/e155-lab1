@@ -41,7 +41,7 @@ module lab1_counter_2_4Hz_tb();
 			$error("1. Failure: Enable = 0 unable to prevent writing to counter");
 		enable = 1; // allow writing 
 		
-		#200000000; // 200 million ns = 20 sec wait time for counter to reach max count
+		#200000000; // 200 million ns = 0.2 sec wait time for counter to reach max count
 		#20; // after max count reached, reset back to 0
 		assert (dut.counter == 0)
 			$display("2. Success: counter wraps back to 0 when it reaches max count.");

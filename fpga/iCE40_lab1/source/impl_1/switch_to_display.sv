@@ -29,7 +29,7 @@ module switch_to_display(
 			4'b1101: segment = 7'b0100001; //13  D
 			4'b1110: segment = 7'b0000110; //14  E
 			4'b1111: segment = 7'b0001110; //15  F
-			default: segment = 7'bx;
+			default: segment = 7'b1111111;
 		endcase
 	
 
