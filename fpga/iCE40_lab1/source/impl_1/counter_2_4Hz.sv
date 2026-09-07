@@ -17,12 +17,12 @@ module counter_2_4Hz
 			if (rst) begin
 				counter <= 0;
 				led_state <= 0;
-			end
+				end
 			else if (en) begin
 				if (counter >= MAX_COUNT) begin
 					led_state <= ~led_state; // toggles led state on or off once desired cycle time up
 					counter <= 0;
-				end
+					end
 				else counter <= counter + 1'b1;
 			end 
 	end

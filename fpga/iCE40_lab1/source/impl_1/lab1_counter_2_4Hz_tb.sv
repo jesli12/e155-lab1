@@ -28,42 +28,42 @@ module lab1_counter_2_4Hz_tb();
 	end
 		
 	// test cases
-	inital begin
+	initial begin
 		enable = 1;
 		reset = 1; 
 		#20;
 		enable = 0; // should freeze counter at 0
 		reset = 0;
 		#80;
-		assert (counter == 0)
-			$display("Success: Enable = 0 has successfully kept counter at 0, no writing.");
+		assert (dut.counter == 0)
+			$display("1. Success: Enable = 0 has successfully kept counter at 0, no writing.");
 		else
-			$error("Failure: Enable = 0 unable to prevent writing to counter");
+			$error("1. Failure: Enable = 0 unable to prevent writing to counter");
 		enable = 1; // allow writing 
 		
-		#20000000; // 200 million ns = 20 second wait time for counter to reach max count
+		#200000000; // 200 million ns = 20 sec wait time for counter to reach max count
 		#20; // after max count reached, reset back to 0
-		assert (counter == 0)
-			$display("Success: counter wraps back to 0 when it reaches max count.");
+		assert (dut.counter == 0)
+			$display("2. Success: counter wraps back to 0 when it reaches max count.");
 		else
-			$error("Failure: Counter does not wrap back to 0 when it reaches max count.");
+			$error("2. Failure: Counter does not wrap back to 0 when it reaches max count. Counter is %d", dut.counter);
 		assert (blinker_led == 1)
-			$display("Success: blinker_led turns on once first max count is reached.");
+			$display("3. Success: blinker_led turns on once first max count is reached.");
 		else
-			$error("Failure: blinker_led is off even after first max count is reached.");
+			$error("3. Failure: blinker_led is off even after first max count is reached.");
 		
 		#200;
-		assert (counter > 0)
-			$display("Success: counter is counting up.");
+		assert (dut.counter > 0)
+			$display("4. Success: counter is counting up.");
 		else
-			$error("Failure: counter is not counting up??");
+			$error("4. Failure: counter is not counting up??");
 		
 		reset = 1;
-		#10;
-		assert ((counter == 0) & (blinker_led ==0))
-			$display("Success: Reset has returned counter and blinker_led to 0");
+		#20;
+		assert ((dut.counter == 0) & (blinker_led ==0))
+			$display("5. Success: Reset has returned counter and blinker_led to 0");
 		else
-			$error("Failed: Reset has not returned countern and blinker_led to 0");
+			$error("5. Failed: Reset has not returned countern and blinker_led to 0");
 		reset = 0;
 		
 		
