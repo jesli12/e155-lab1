@@ -1,0 +1,30 @@
+---------------------------------------------------
+Report for cell lab1_jl
+   Instance path: lab1_jl
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         70        100.0
+                               LUTGATE	         44        100.0
+                                LUTCCU	         26        100.0
+                                 IOBUF	         16        100.0
+                                PFUREG	         26        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                         counter_2_4Hz	          1        84.3
+                     switch_to_display	          1        10.0
+---------------------------------------------------
+Report for cell switch_to_display
+   Instance path: lab1_jl/seven_seg
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7        10.0
+                               LUTGATE	          7        15.9
+---------------------------------------------------
+Report for cell counter_2_4Hz
+   Instance path: lab1_jl/blinker
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         59        84.3
+                               LUTGATE	         33        75.0
+                                LUTCCU	         26        100.0
+                                PFUREG	         26        100.0
