@@ -1,5 +1,5 @@
 __design_bin_path=C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSimlab1_switch_to_display_tb
-incr_run_version=16384
+incr_run_version=32768
 incr_partial_run_stats=0:0
 incr_no_change_stats=0:0
 opt_data_elab=C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSimlab1_switch_to_display_tb/qrun.out/work/qrun_opt

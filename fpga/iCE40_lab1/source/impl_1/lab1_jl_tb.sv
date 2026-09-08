@@ -202,9 +202,9 @@ module lab1_jl_tb();
 		// clk and led can be show through questa wave forms
 		// let's test reset and enable to show that it is connected to the submodule correctly!
 		en = 1;
-		rst = 1;
-		#21;
 		rst = 0;
+		#21;
+		rst = 1;
 		#100000000; // expected behavior: enable off, counter in submodule pauses
 		en = 0;
 		#200000000;
@@ -217,12 +217,12 @@ module lab1_jl_tb();
 			$display ("3b2. Success: led[2] (blinker) successfully turned on. Time: %0t.", $time);
 		else $error("3b2. Failure: led[2] (blinker) failed to turn on. Time: %0t.", $time);
 		
-		rst = 1;
+		rst = 0;
 		#21;
 		assert (leds[2] == 0)
 			$display ("3b3. Success: led[2] (blinker) successfully reset back to 0. Time: %0t.", $time);
 		else $error("3b3. Failure: led[2] (blinker) failed to reset back to 0. Time: %0t.", $time);
-		rst = 0;
+		rst = 1;
 		
 		
 		

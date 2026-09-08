@@ -8,7 +8,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2026.1.0.37.0
-Mapped on: Mon Sep  7 21:22:13 2026
+Mapped on: Mon Sep  7 21:55:54 2026
 
 Design Information
 ------------------
@@ -24,8 +24,8 @@ Design Summary
 
    Number of slice registers:  26 out of  5280 (<1%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:            69 out of  5280 (1%)
-      Number of logic LUT4s:              43
+   Number of LUT4s:            70 out of  5280 (1%)
+      Number of logic LUT4s:              44
       Number of ripple logic:             13 (26 LUT4s)
    Number of IO sites used:   16 out of 39 (41%)
       Number of IO sites used for general PIO: 16
@@ -52,13 +52,13 @@ Design Summary
       Net int_osc: 26 loads, 26 rising, 0 falling (Driver: Pin hf_osc/CLKHF)
    Number of Clock Enables:  2
       Net VCC_net: 1 loads, 0 SLICEs
-      Net n247: 26 loads, 26 SLICEs
+      Net n249: 26 loads, 26 SLICEs
    Number of LSRs:  1
-      Pin reset: 26 loads, 26 SLICEs (Net: reset_c)
+      Net blinker.n54: 26 loads, 26 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net reset_c: 27 loads
-      Net blinker.n3: 26 loads
-      Net n247: 26 loads
+      Net blinker.n4_adj_41: 26 loads
+      Net blinker.n54: 26 loads
+      Net n249: 26 loads
       Net s_c[0]: 8 loads
 
                                     Page 1
@@ -73,8 +73,8 @@ Design Summary (cont)
       Net s_c[2]: 8 loads
       Net s_c[3]: 8 loads
       Net VCC_net: 3 loads
-      Net blinker.counter[13]: 2 loads
-      Net blinker.counter[14]: 2 loads
+      Net blinker.counter[19]: 2 loads
+      Net blinker.counter[20]: 2 loads
 
 
 
@@ -171,7 +171,7 @@ Run Time and Memory Usage
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 66 MB
-Checksum -- map: 9d10f909fcf8f2fd3f586abf3d98d09ec266eb05
+Checksum -- map: 37f19635c87604f6d6cf1ddecea5e43799a9903c
 
 
 

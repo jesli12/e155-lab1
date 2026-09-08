@@ -36,10 +36,10 @@ module lab1_counter_2_4Hz_tb();
 	initial begin
 		// ### FIRST reset values to have a known starting value.
 		enable = 1;  // allow writing to counter
-		reset = 1;   // reset blinker_led to 0, counter to 0
+		reset = 0;   // reset blinker_led to 0, counter to 0
 		#20;
 		enable = 0; // pause writing to counter (should freeze counter at 0)
-		reset = 0;  // turn off reset (so blinker_led and counter don't stay at reset state)
+		reset = 1;  // turn off reset (so blinker_led and counter don't stay at reset state)
 		
 		// ### TEST 1a: Enable prevents counter from changing.
 		#80;
@@ -89,13 +89,13 @@ module lab1_counter_2_4Hz_tb();
 		else
 			$error("3a. Failure: counter is not counting up, stuck at 0. Counter: %0d. Time: %0t.", dut.counter, $time);
 		
-		reset = 1;
+		reset = 0;
 		#20;
 		assert ((dut.counter == 0) & (blinker_led ==0))
 			$display("3b. Success [Reset]: Reset has returned counter and blinker_led to 0. Time: %0t.", $time);
 		else
 			$error("3b. Failed [Reset]: Reset has not returned countern and blinker_led to 0. Counter: %0d. Time: %0t.", dut.counter, $time);
-		reset = 0;
+		reset = 1;
 		#100;
 		$stop;
 	end
