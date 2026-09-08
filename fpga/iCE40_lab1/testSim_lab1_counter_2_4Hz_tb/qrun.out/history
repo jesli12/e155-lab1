@@ -1,0 +1,39 @@
+- Entry: 1
+  Time: Mon Sep 07 02:07:27 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -clean -f C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_counter_2_4Hz_tb/testSim_lab1_counter_2_4Hz_tb.f 
+- Entry: 2
+  Time: Mon Sep 07 02:10:59 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_counter_2_4Hz_tb/testSim_lab1_counter_2_4Hz_tb.f 
+- Entry: 3
+  Time: Mon Sep 07 02:23:02 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_counter_2_4Hz_tb/testSim_lab1_counter_2_4Hz_tb.f 
+- Entry: 4
+  Time: Mon Sep 07 02:26:04 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_counter_2_4Hz_tb/testSim_lab1_counter_2_4Hz_tb.f 
+- Entry: 5
+  Time: Mon Sep 07 02:36:58 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_counter_2_4Hz_tb/testSim_lab1_counter_2_4Hz_tb.f 
+- Entry: 6
+  Time: Mon Sep 07 02:45:35 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_counter_2_4Hz_tb/testSim_lab1_counter_2_4Hz_tb.f 
+- Entry: 7
+  Time: Mon Sep 07 02:55:18 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_counter_2_4Hz_tb/testSim_lab1_counter_2_4Hz_tb.f 
+- Entry: 8
+  Time: Mon Sep 07 03:18:53 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_counter_2_4Hz_tb/testSim_lab1_counter_2_4Hz_tb.f 
+- Entry: 9
+  Time: Mon Sep 07 03:39:08 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_counter_2_4Hz_tb/testSim_lab1_counter_2_4Hz_tb.f 
+- Entry: 10
+  Time: Mon Sep 07 14:27:57 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_counter_2_4Hz_tb/testSim_lab1_counter_2_4Hz_tb.f 
+- Entry: 11
+  Time: Mon Sep 07 14:32:44 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_counter_2_4Hz_tb/testSim_lab1_counter_2_4Hz_tb.f 
+- Entry: 12
+  Time: Mon Sep 07 14:38:25 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_counter_2_4Hz_tb/testSim_lab1_counter_2_4Hz_tb.f 
+- Entry: 13
+  Time: Mon Sep 07 21:56:41 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_counter_2_4Hz_tb/testSim_lab1_counter_2_4Hz_tb.f 
