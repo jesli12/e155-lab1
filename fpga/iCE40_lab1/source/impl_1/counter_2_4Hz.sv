@@ -23,7 +23,10 @@ module counter_2_4Hz
 					led_state <= ~led_state; // toggles led state on or off once desired cycle time up
 					counter <= 0;
 					end
-				else counter <= counter + 1'b1;
+				else begin
+					counter <= counter + 1'b1;
+					led_state <= led_state;
+				end
 			end
 			else begin
 				counter <= counter;  // not imply latch

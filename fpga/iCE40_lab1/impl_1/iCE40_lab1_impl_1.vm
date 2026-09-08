@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE :  version Radiant Software (64-bit) 2026.1.0.37.0
-// Netlist written on Mon Sep  7 21:55:50 2026
+// Netlist written on Tue Sep  8 14:55:43 2026
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
 // file 0 "c:/users/jesli/documents/github/e155-lab1/fpga/ice40_lab1/source/impl_1/counter_2_4hz.sv"
@@ -179,13 +179,15 @@ module counter_2_4Hz (input n249, input int_osc, output \led_c[2] , input reset_
     (* is_clock=1 *) wire int_osc;
     
     wire GND_net, VCC_net;
-    wire [24:0]n34;
     wire [24:0]n132;
     
-    wire n781, n4, n424, n757, n790, n320, n54, n328, n4_adj_41, 
-        n778, n793, n33, n326, n784, n330, n332, n334, n32, 
-        n787, n322, n760, n26, n775, n338, n336, n324, n772, 
-        n769, n766, n318, n763, n4_adj_42, n316;
+    wire n778;
+    wire [24:0]n34;
+    
+    wire n322, n338, n4, n4_adj_41, n424, n330, n54, n332, n33, 
+        n334, n336, n781, n328, n318, n760, n324, n787, n32, 
+        n784, n775, n316, n766, n757, n793, n326, n790, n769, 
+        n772, n320, n763, n4_adj_42, n26;
     
     (* lut_function="(A+(B (C (D))))" *) LUT4 i1_4_lut (.A(counter[21]), .B(counter[20]), 
             .C(counter[19]), .D(n424), .Z(n4));

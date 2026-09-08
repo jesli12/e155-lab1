@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Sep  7 21:56:06 2026
+Tue Sep  8 14:56:01 2026
 
 
 Command: bitgen -w -gui -msgset C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/promote.xml -freq 0 iCE40_lab1_impl_1.udb C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/impl_1/iCE40_lab1_impl_1 
@@ -26,5 +26,5 @@ Bitstream generation complete!
 
 Total CPU Time: 0 secs 
 Total REAL Time: 4 secs 
-Peak Memory Usage: 118 MB
+Peak Memory Usage: 117 MB
 
