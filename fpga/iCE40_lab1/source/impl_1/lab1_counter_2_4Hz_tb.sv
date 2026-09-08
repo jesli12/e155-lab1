@@ -1,5 +1,5 @@
 // Jessica Li  |  jesli@g.hmc.edu
-// 09/06/2026
+// 09/07/2026
 /* This is a test bench for the sequential sub module counter_2_4Hz
 	Goal: check 3 features of the counter submodule
 		1. Enable (pause/resume write to counter)

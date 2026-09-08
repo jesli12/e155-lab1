@@ -6,6 +6,13 @@ R0
 R0
 R0
 R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
 !s11f vlog 2025.2 2025.05, May 31 2025
 13
 !s112 1.1
@@ -43,23 +50,23 @@ ncounter_2_4@hz
 vlab1_counter_2_4Hz_tb
 R2
 R3
-R4
+!s110 1788817836
 !i10b 1
-!s100 37mkS<MH_`Ol9enlITgYc2
-IiU7AVk]H`ARe0IQK6F0Gc2
+!s100 n<]=53>6[_zJHJeG[6ghm3
+IIklH<?@jZ5a><UcSGGSLK3
 S1
 R1
-w1788779044
+w1788817299
 8C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_counter_2_4Hz_tb.sv
 FC:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_counter_2_4Hz_tb.sv
-!i122 0
-L0 8 67
+!i122 6
+L0 13 91
 R5
 R6
 r1
 !s85 0
 31
-R7
+!s108 1788817836.000000
 R8
 R9
 !i113 0
@@ -94,23 +101,23 @@ R11
 vlab1_jl_tb
 R2
 R3
-!s110 1788788966
+!s110 1788831594
 !i10b 1
-!s100 OBJFNH7a_5K9VgkLe08OS0
-IkK7<]6G5NW`:j^JASSDHn0
+!s100 P>RXYhJPO91MZ8NUKMbPk2
+I6QPgUeDze0boB3Mf5?P_^2
 S1
 R1
-w1788788921
+w1788831549
 8C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_jl_tb.sv
 FC:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_jl_tb.sv
-!i122 5
-L0 9 100
+!i122 10
+L0 9 224
 R5
 R6
 r1
 !s85 0
 31
-!s108 1788788966.000000
+!s108 1788831594.000000
 R8
 R9
 !i113 0
@@ -144,8 +151,8 @@ R11
 Tqrun_opt
 !i145 1
 !i144 0
-!s110 1788788967
-Vb<@D0k3MQ4oDkf<GMIfn=0
+!s110 1788831595
+VBo<7Y6TVad]]^dG2V^K0E2
 04 10 4 work lab1_jl_tb fast 0
 R0
 !s12f OEM25U4 

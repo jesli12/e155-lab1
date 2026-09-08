@@ -17,5 +17,5 @@ Writing output file 'iCE40_lab1_impl_1_syn.udb'.
 POSTSYN finished successfully.
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 41 MB
-Checksum -- postsyn: 736f66331bbc43bfd002d717e8908960ce12bc7c
+Peak Memory Usage: 42 MB
+Checksum -- postsyn: 518af75722f55da0a1d6de30b36327a634cf38c0

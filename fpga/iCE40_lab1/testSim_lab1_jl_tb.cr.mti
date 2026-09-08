@@ -1,0 +1,41 @@
+C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_counter_2_4Hz_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_counter_2_4Hz_tb.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_jl_tb.mpf' is used as the ini file.
+-- Compiling module lab1_counter_2_4Hz_tb
+
+Top level modules:
+	lab1_counter_2_4Hz_tb
+
+} {} {}} C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/counter_2_4Hz.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/counter_2_4Hz.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_jl_tb.mpf' is used as the ini file.
+-- Compiling module counter_2_4Hz
+
+Top level modules:
+	counter_2_4Hz
+
+} {} {}} C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/switch_to_display.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/switch_to_display.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_jl_tb.mpf' is used as the ini file.
+-- Compiling module switch_to_display
+
+Top level modules:
+	switch_to_display
+
+} {} {}} C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_switch_to_display_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_switch_to_display_tb.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_jl_tb.mpf' is used as the ini file.
+-- Compiling module lab1_switch_to_display_tb
+
+Top level modules:
+	lab1_switch_to_display_tb
+
+} {} {}} C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_jl.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_jl.sv
+Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+** Note: (vlog-220) 'C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_jl_tb.mpf' is used as the ini file.
+-- Compiling module lab1_jl
+
+Top level modules:
+	lab1_jl
+
+} {} {}}

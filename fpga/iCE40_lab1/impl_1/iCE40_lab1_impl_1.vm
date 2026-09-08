@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE :  version Radiant Software (64-bit) 2026.1.0.37.0
-// Netlist written on Mon Sep  7 02:21:16 2026
+// Netlist written on Mon Sep  7 17:25:50 2026
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
 // file 0 "c:/users/jesli/documents/github/e155-lab1/fpga/ice40_lab1/source/impl_1/counter_2_4hz.sv"
@@ -178,14 +178,16 @@ module counter_2_4Hz (input n247, input int_osc, input reset_c, output \led_c[2]
     wire [24:0]counter;
     (* is_clock=1 *) wire int_osc;
     
-    wire GND_net, VCC_net, n315;
+    wire GND_net, VCC_net;
     wire [24:0]n33;
+    
+    wire n4, n770;
     wire [24:0]n132;
     
-    wire n3, n26, n773, n4, n788, n32_adj_42, n770, n331, n319, 
-        n321, n776, n423, n333, n317, n32, n329, n779, n337, 
-        n327, n785, n335, n782, n764, n791, n325, n323, n767, 
-        n761, n758, n755, n4_adj_41;
+    wire n319, n3, n32_adj_42, n26, n785, n423, n32, n329, n327, 
+        n779, n331, n776, n4_adj_41, n323, n764, n337, n791, 
+        n335, n788, n782, n333, n325, n773, n321, n317, n767, 
+        n315, n761, n758, n755;
     
     (* lut_function="(A (B)+!A (B (C+(D))))" *) LUT4 i39_4_lut (.A(counter[14]), 
             .B(counter[15]), .C(counter[13]), .D(n26), .Z(n32_adj_42));

@@ -13,34 +13,39 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-vsim -gui work.lab1_jl -L iCE40UP -voptargs=+acc
-# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# vsim -gui work.lab1_jl -L iCE40UP -voptargs="+acc" 
-# Start time: 21:26:35 on Sep 06,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.lab1_jl(fast)
-# Loading iCE40UP.HSOSC(fast)
-# Loading work.switch_to_display(fast)
-# Loading work.counter_2_4Hz(fast)
-add wave -position end  sim:/lab1_jl/s
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: jesli  Hostname: 5CJZ0R3  ProcessID: 15944
-#           Attempting to use alternate WLF file "./wlftkqwynn".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftkqwynn
-add wave -position end  sim:/lab1_jl/seg
-add wave -position end  sim:/lab1_jl/led
-add wave -position end  sim:/lab1_jl/int_osc
-add wave -position end  sim:/lab1_jl/reset
-force s 4'b1101
-run 100
-force s 4'b0000
-run 100
-force s 4'b1010
-run 100
-# End time: 21:44:10 on Sep 06,2026, Elapsed time: 0:17:35
-# Errors: 0, Warnings: 3
+# Loading project testSim_lab1_jl_tb
+# Compile of counter_2_4Hz.sv was successful.
+# Compile of lab1_counter_2_4Hz_tb.sv was successful.
+# Compile of lab1_jl.sv was successful.
+# Compile of lab1_jl_tb.sv failed with 1 errors.
+# Compile of lab1_switch_to_display_tb.sv was successful.
+# Compile of switch_to_display.sv was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of counter_2_4Hz.sv was successful.
+# Compile of lab1_counter_2_4Hz_tb.sv was successful.
+# Compile of lab1_jl.sv was successful.
+# Compile of lab1_jl_tb.sv failed with 1 errors.
+# Compile of lab1_switch_to_display_tb.sv was successful.
+# Compile of switch_to_display.sv was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of counter_2_4Hz.sv was successful.
+# Compile of lab1_counter_2_4Hz_tb.sv was successful.
+# Compile of lab1_jl.sv was successful.
+# Compile of lab1_jl_tb.sv failed with 1 errors.
+# Compile of lab1_switch_to_display_tb.sv was successful.
+# Compile of switch_to_display.sv was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of counter_2_4Hz.sv was successful.
+# Compile of lab1_counter_2_4Hz_tb.sv was successful.
+# Compile of lab1_jl.sv was successful.
+# Compile of lab1_jl_tb.sv was successful.
+# Compile of lab1_switch_to_display_tb.sv was successful.
+# Compile of switch_to_display.sv was successful.
+# 6 compiles, 0 failed with no errors.
+# can't read "Startup(-L)": no such element in array
+# Load canceled
+restart -f
+# No Design Loaded!
+# can't read "Startup(-L)": no such element in array
+# Load canceled
+# Optimization canceled

@@ -24,7 +24,8 @@ module counter_2_4Hz
 					counter <= 0;
 					end
 				else counter <= counter + 1'b1;
-			end 
+			end
+			else counter <= counter + 1'b0;
 	end
 		
 	assign led = led_state;
