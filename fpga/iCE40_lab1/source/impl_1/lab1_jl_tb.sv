@@ -204,9 +204,9 @@ module lab1_jl_tb();
 		en = 1;
 		rst = 0;
 		#21;
-		rst = 1;
-		#100000000; // expected behavior: enable off, counter in submodule pauses
-		en = 0;
+		rst = 1;  // reset OFF
+		#100000000; 
+		en = 0;   // expected behavior: enable off, counter in submodule freezes
 		#200000000;
 		assert (leds[2] == 0)
 			$display ("3b1. Success: enable off prevented led write. Time: %0t.", $time);
