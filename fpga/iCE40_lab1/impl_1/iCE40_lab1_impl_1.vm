@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE :  version Radiant Software (64-bit) 2026.1.0.37.0
-// Netlist written on Mon Sep  7 17:25:50 2026
+// Netlist written on Mon Sep  7 21:22:09 2026
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
 // file 0 "c:/users/jesli/documents/github/e155-lab1/fpga/ice40_lab1/source/impl_1/counter_2_4hz.sv"
@@ -109,8 +109,8 @@ module lab1_jl (input [3:0]s, input reset, input enable, output [2:0]led,
     (* lut_function="(A (B))" *) LUT4 s_c_2__I_0_2_lut (.A(s_c[2]), .B(s_c[3]), 
             .Z(led_c[1]));
     defparam s_c_2__I_0_2_lut.INIT = "0x8888";
-    (* LSE_LINE_FILE_ID=26, LSE_LCOL=20, LSE_RCOL=3, LSE_LLINE=25, LSE_RLINE=28 *) switch_to_display seven_seg ({s_c}, 
-            {seg_c});
+    (* LSE_LINE_FILE_ID=26, LSE_LCOL=20, LSE_RCOL=3, LSE_LLINE=25, LSE_RLINE=28 *) switch_to_display seven_seg ({seg_c}, 
+            {s_c});
     IB \s_pad[3]  (.I(s[3]), .O(s_c[3]));
     IB \s_pad[2]  (.I(s[2]), .O(s_c[2]));
     IB \s_pad[1]  (.I(s[1]), .O(s_c[1]));
@@ -127,8 +127,8 @@ module lab1_jl (input [3:0]s, input reset, input enable, output [2:0]led,
     OB \seg_pad[2]  (.I(seg_c[2]), .O(seg[2]));
     OB \seg_pad[1]  (.I(seg_c[1]), .O(seg[1]));
     OB \seg_pad[0]  (.I(seg_c[0]), .O(seg[0]));
-    (* LSE_LINE_FILE_ID=26, LSE_LCOL=16, LSE_RCOL=3, LSE_LLINE=31, LSE_RLINE=36 *) counter_2_4Hz blinker (n247, 
-            int_osc, reset_c, led_c[2]);
+    (* LSE_LINE_FILE_ID=26, LSE_LCOL=16, LSE_RCOL=3, LSE_LLINE=31, LSE_RLINE=36 *) counter_2_4Hz blinker (led_c[2], 
+            n247, int_osc, reset_c);
     (* syn_instantiated=1 *) HSOSC_CORE hf_osc (.CLKHFPU(VCC_net), .CLKHFEN(VCC_net), 
             .TRIM9(GND_net), .TRIM8(GND_net), .TRIM7(GND_net), .TRIM6(GND_net), 
             .TRIM5(GND_net), .TRIM4(GND_net), .TRIM3(GND_net), .TRIM2(GND_net), 
@@ -142,7 +142,7 @@ endmodule
 // Verilog Description of module switch_to_display
 //
 
-module switch_to_display (input [3:0]s_c, output [6:0]seg_c);
+module switch_to_display (output [6:0]seg_c, input [3:0]s_c);
     
     
     (* lut_function="(A (B (D)+!B !(C+(D)))+!A !(B ((D)+!C)+!B (C+!(D))))" *) LUT4 i413_4_lut (.A(s_c[0]), 
@@ -173,7 +173,7 @@ endmodule
 // Verilog Description of module counter_2_4Hz
 //
 
-module counter_2_4Hz (input n247, input int_osc, input reset_c, output \led_c[2] );
+module counter_2_4Hz (output \led_c[2] , input n247, input int_osc, input reset_c);
     
     wire [24:0]counter;
     (* is_clock=1 *) wire int_osc;
@@ -181,13 +181,13 @@ module counter_2_4Hz (input n247, input int_osc, input reset_c, output \led_c[2]
     wire GND_net, VCC_net;
     wire [24:0]n33;
     
-    wire n4, n770;
+    wire n26;
     wire [24:0]n132;
     
-    wire n319, n3, n32_adj_42, n26, n785, n423, n32, n329, n327, 
-        n779, n331, n776, n4_adj_41, n323, n764, n337, n791, 
-        n335, n788, n782, n333, n325, n773, n321, n317, n767, 
-        n315, n761, n758, n755;
+    wire n337, n32_adj_42, n770, n3, n761, n785, n423, n776, 
+        n4, n32, n329, n779, n317, n331, n4_adj_41, n323, n327, 
+        n333, n788, n321, n791, n335, n767, n782, n325, n773, 
+        n319, n764, n315, n758, n755;
     
     (* lut_function="(A (B)+!A (B (C+(D))))" *) LUT4 i39_4_lut (.A(counter[14]), 
             .B(counter[15]), .C(counter[13]), .D(n26), .Z(n32_adj_42));

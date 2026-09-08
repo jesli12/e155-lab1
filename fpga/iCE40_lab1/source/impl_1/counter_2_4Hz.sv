@@ -25,7 +25,10 @@ module counter_2_4Hz
 					end
 				else counter <= counter + 1'b1;
 			end
-			else counter <= counter + 1'b0;
+			else begin
+				counter <= counter;  // not imply latch
+				led_state <= led_state;
+			end
 	end
 		
 	assign led = led_state;
