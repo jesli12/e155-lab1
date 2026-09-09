@@ -1,6 +1,6 @@
 // Jessica Li  |  jesli@g.hmc.edu
 // 09/06/2026
-// This is a module used in the top-leve module "lab1_jl"
+// This is a module used in the top-level module "lab1_jl"
 // It contains the sequential logic for an output of led[2] blinking at 2.4 Hz
 
 module counter_2_4Hz
@@ -29,7 +29,7 @@ module counter_2_4Hz
 				end
 			end
 			else begin
-				counter <= counter;  // not imply latch
+				counter <= counter;  
 				led_state <= led_state;
 			end
 	end

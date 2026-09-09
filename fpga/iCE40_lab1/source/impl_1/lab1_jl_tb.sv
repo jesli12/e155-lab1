@@ -227,7 +227,8 @@ module lab1_jl_tb();
 		else $error("3b3. Failure: led[2] (blinker) failed to reset back to 0. Time: %0t.", $time);
 		rst = 1;
 		
-		
+		// $display("No more tests beyond this time stamp (%0t). Running to observe led[2] as a simulated waveform.", $time);
+		// #500000000
 		
 		#100;
 		$stop;

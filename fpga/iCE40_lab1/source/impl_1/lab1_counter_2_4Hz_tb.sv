@@ -96,6 +96,7 @@ module lab1_counter_2_4Hz_tb();
 		else
 			$error("3b. Failed [Reset]: Reset has not returned countern and blinker_led to 0. Counter: %0d. Time: %0t.", dut.counter, $time);
 		reset = 1;
+	
 		#100;
 		$stop;
 	end

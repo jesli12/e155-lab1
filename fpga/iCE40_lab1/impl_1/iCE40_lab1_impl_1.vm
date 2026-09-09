@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE :  version Radiant Software (64-bit) 2026.1.0.37.0
-// Netlist written on Tue Sep  8 14:55:43 2026
+// Netlist written on Tue Sep  8 23:33:17 2026
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
 // file 0 "c:/users/jesli/documents/github/e155-lab1/fpga/ice40_lab1/source/impl_1/counter_2_4hz.sv"
@@ -109,8 +109,8 @@ module lab1_jl (input [3:0]s, input reset, input enable, output [2:0]led,
     (* lut_function="(A+!(B))" *) LUT4 i218_2_lut (.A(enable_c), .B(reset_c), 
             .Z(n249));
     defparam i218_2_lut.INIT = "0xbbbb";
-    (* LSE_LINE_FILE_ID=26, LSE_LCOL=20, LSE_RCOL=3, LSE_LLINE=25, LSE_RLINE=28 *) switch_to_display seven_seg ({s_c}, 
-            {seg_c});
+    (* LSE_LINE_FILE_ID=26, LSE_LCOL=20, LSE_RCOL=3, LSE_LLINE=25, LSE_RLINE=28 *) switch_to_display seven_seg ({seg_c}, 
+            {s_c});
     IB \s_pad[3]  (.I(s[3]), .O(s_c[3]));
     IB \s_pad[2]  (.I(s[2]), .O(s_c[2]));
     IB \s_pad[1]  (.I(s[1]), .O(s_c[1]));
@@ -142,7 +142,7 @@ endmodule
 // Verilog Description of module switch_to_display
 //
 
-module switch_to_display (input [3:0]s_c, output [6:0]seg_c);
+module switch_to_display (output [6:0]seg_c, input [3:0]s_c);
     
     
     (* lut_function="(!(A ((C+!(D))+!B)+!A (B (C+(D))+!B !(C (D)+!C !(D)))))" *) LUT4 seg_c_6__I_0_4_lut (.A(s_c[1]), 
@@ -179,15 +179,15 @@ module counter_2_4Hz (input n249, input int_osc, output \led_c[2] , input reset_
     (* is_clock=1 *) wire int_osc;
     
     wire GND_net, VCC_net;
-    wire [24:0]n132;
-    
-    wire n778;
     wire [24:0]n34;
     
-    wire n322, n338, n4, n4_adj_41, n424, n330, n54, n332, n33, 
-        n334, n336, n781, n328, n318, n760, n324, n787, n32, 
-        n784, n775, n316, n766, n757, n793, n326, n790, n769, 
-        n772, n320, n763, n4_adj_42, n26;
+    wire n328, n33, n424, n4, n332;
+    wire [24:0]n132;
+    
+    wire n54, n330, n778, n4_adj_41, n781, n790, n338, n763, 
+        n322, n318, n784, n326, n787, n793, n336, n772, n334, 
+        n775, n324, n769, n26, n320, n4_adj_42, n766, n316, 
+        n760, n757, n32;
     
     (* lut_function="(A+(B (C (D))))" *) LUT4 i1_4_lut (.A(counter[21]), .B(counter[20]), 
             .C(counter[19]), .D(n424), .Z(n4));
