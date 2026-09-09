@@ -54,7 +54,7 @@ module lab1_counter_2_4Hz_tb();
 		#200000000; // 200 million ns = 10 million cycles (recall max count is 10 million)
 		
 		// The following confirms 2 things: Did enable = 1 allow for counter to incrase? and Did counter reach max count as expected?
-		assert (dut.counter == 10_000_000)
+		assert (dut.counter == (10_000_000))
 			$display("1b. Success [Counter & Enable]: Counter counted up to max count of 10 000 000 as expected. Time: %0t.", $time);
 		else
 			$error("1b. Failure: Counter did not reach max count in expected cycles. Counter: %0d. Time: %0t.", dut.counter, $time);

@@ -7,5 +7,5 @@
     <GlbInc value=""/>
     <Macro value=""/>
     <Udo value=""/>
-    <TopModule instance="" language="VERILOG" name="lab1_switch_to_display_tb"/>
+    <TopModule instance="" language="VERILOG" name="lab1_jl"/>
 </RadiantSimulationProject>

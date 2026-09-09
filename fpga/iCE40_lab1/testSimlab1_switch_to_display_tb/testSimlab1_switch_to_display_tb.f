@@ -17,11 +17,11 @@
 -end
 
 -gui
--top lab1_switch_to_display_tb
+-top lab1_jl
 -vsim.options
   -suppress vsim-7033,vsim-8630,3009,3389
 -end
 
 -do "view wave"
 -do "add wave /*"
--do "run -all"
+-do "run 100 ns"

@@ -19,19 +19,12 @@ module counter_2_4Hz
 				led_state <= 0;
 				end
 			else if (en) begin
-				if (counter >= MAX_COUNT) begin // 9/9: for exact timing MAX_COUNT - 1 to account for the cycle it takes to register that it hit max
+				if (counter >= (MAX_COUNT-1)) begin // 9/9: for exact timing MAX_COUNT - 1 to account for the cycle it takes to register that it hit max
 					led_state <= ~led_state; // toggles led state on or off once desired cycle time up
 					counter <= 0;
-					end
-				else begin
-					counter <= counter + 1'b1;
-					led_state <= led_state;
 				end
 			end
-			else begin
-				counter <= counter;  
-				led_state <= led_state;
-			end
+
 	end
 		
 	assign led = led_state;
