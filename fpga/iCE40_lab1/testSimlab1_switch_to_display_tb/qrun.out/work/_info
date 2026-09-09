@@ -14,79 +14,79 @@ Z1 dC:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSimlab1_switch
 vcounter_2_4Hz
 Z2 2C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/counter_2_4Hz.sv|C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_jl.sv|C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/switch_to_display.sv|C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_switch_to_display_tb.sv
 Z3 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
-Z4 !s110 1788843855
+Z4 !s110 1788925225
 !i10b 1
-!s100 FDf4dI2RRE=oFJI<VMDE00
-IN?]JW<[^14Y?7miB9QDn<3
+!s100 [LBhCO3<j:=QE@:YQO=QK0
+I[MCeZMzfCk78@?6nG<4eY0
 S1
 R1
-w1788843203
-8C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/counter_2_4Hz.sv
-FC:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/counter_2_4Hz.sv
-!i122 1
-L0 6 31
-Z5 VDg1SIo80bB@j0V0VzS_@n1
-Z6 OL;L;2025.2;82
+Z5 w1788924008
+Z6 8C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/counter_2_4Hz.sv
+Z7 FC:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/counter_2_4Hz.sv
+!i122 2
+L0 6 34
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2025.2;82
 r1
 !s85 0
 31
-Z7 !s108 1788843855.000000
-Z8 !s107 C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_switch_to_display_tb.sv|C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/switch_to_display.sv|C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_jl.sv|C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/counter_2_4Hz.sv|
-Z9 !s90 -reportprogress|300|-L|work|-sv|-L|pmi_work|-L|ovi_ice40up|C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/counter_2_4Hz.sv|C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_jl.sv|C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/switch_to_display.sv|C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_switch_to_display_tb.sv|-work|qrun.out/work|-statslog|qrun.out/stats_log|-csession=incr|
+Z10 !s108 1788925225.000000
+Z11 !s107 C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_switch_to_display_tb.sv|C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/switch_to_display.sv|C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_jl.sv|C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/counter_2_4Hz.sv|
+Z12 !s90 -reportprogress|300|-L|work|-sv|-L|pmi_work|-L|ovi_ice40up|C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/counter_2_4Hz.sv|C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_jl.sv|C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/switch_to_display.sv|C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_switch_to_display_tb.sv|-work|qrun.out/work|-statslog|qrun.out/stats_log|-csession=incr|
 !i113 0
-Z10 o-L work -sv -L pmi_work -L ovi_ice40up -work qrun.out/work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z11 tCvgOpt 0 defaultOptions 1085333592
-ncounter_2_4@hz
+Z13 o-L work -sv -L pmi_work -L ovi_ice40up -work qrun.out/work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z14 tCvgOpt 0 defaultOptions 1085333592
+Z15 ncounter_2_4@hz
 vlab1_jl
 R2
 R3
 R4
 !i10b 1
-!s100 KiG^^9nQm2DQE1F6zk5KC0
-IXh?85eh`;=Ca?WEBdb0]20
+Z16 !s100 KiG^^9nQm2DQE1F6zk5KC0
+Z17 IXh?85eh`;=Ca?WEBdb0]20
 S1
 R1
-w1788769137
-8C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_jl.sv
-FC:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_jl.sv
-!i122 1
-L0 8 32
 R5
-R6
+Z18 8C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_jl.sv
+Z19 FC:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_jl.sv
+!i122 2
+Z20 L0 8 32
+R8
+R9
 r1
 !s85 0
 31
-R7
-R8
-R9
-!i113 0
 R10
 R11
+R12
+!i113 0
+R13
+R14
 vlab1_switch_to_display_tb
 R2
 R3
 R4
 !i10b 1
-!s100 GgFo[zJFe329ajni]FFdl0
-Ie4l:LFB>e>CnXT_z_5:LR0
+Z21 !s100 GgFo[zJFe329ajni]FFdl0
+Z22 Ie4l:LFB>e>CnXT_z_5:LR0
 S1
 R1
-w1788765784
-8C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_switch_to_display_tb.sv
-FC:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_switch_to_display_tb.sv
-!i122 1
-L0 9 126
 R5
-R6
+Z23 8C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_switch_to_display_tb.sv
+Z24 FC:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/lab1_switch_to_display_tb.sv
+!i122 2
+Z25 L0 9 126
+R8
+R9
 r1
 !s85 0
 31
-R7
-R8
-R9
-!i113 0
 R10
 R11
+R12
+!i113 0
+R13
+R14
 Tqrun_opt
 !i145 1
 !i144 0
@@ -102,28 +102,29 @@ o-suppress vopt-7033 -L work +acc +noacc+pmi_work.* +noacc+ovi_ice40up.* -L pmi_
 tCvgOpt 0 defaultOptions 1107585188
 nqrun_opt
 OL;O;2025.2;82
+R1
 vswitch_to_display
 R2
 R3
 R4
 !i10b 1
-!s100 kl>W8dAV;=U0VEDL=Yg=43
-I18ZfFoLCjC<5YPe^HMG9l3
+Z26 !s100 kl>W8dAV;=U0VEDL=Yg=43
+Z27 I18ZfFoLCjC<5YPe^HMG9l3
 S1
 R1
-w1788787474
-8C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/switch_to_display.sv
-FC:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/switch_to_display.sv
-!i122 1
-L0 9 28
 R5
-R6
+Z28 8C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/switch_to_display.sv
+Z29 FC:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/switch_to_display.sv
+!i122 2
+Z30 L0 9 28
+R8
+R9
 r1
 !s85 0
 31
-R7
-R8
-R9
-!i113 0
 R10
 R11
+R12
+!i113 0
+R13
+R14

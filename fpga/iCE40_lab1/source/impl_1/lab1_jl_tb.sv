@@ -22,6 +22,9 @@ module lab1_jl_tb();
 	);
 	
 	initial begin
+		rst = 1;
+		en = 1;
+		switches = 4'b0000;
 		// ### 1.Does the HSOSC work? ###############################################################################
 		// Visualization on questa shows HSOSC clock tick is 48 Hz
 		
@@ -31,7 +34,7 @@ module lab1_jl_tb();
 			$display ("1a. Success HSOSC: int_osc HSOSC clock is 0. Time: %0t.", $time);
 		else $error("1a. Failure HSOSC: int_osc started at 1? Breaks assumption in following tests. Time: %0t.", $time);
 		
-		// wait for T = 1/f = 1/48Mhz = 20.833ns, then 20.833/2 = 11 ish
+		// wait for T = 1/f = 1/48Mhz = 20.833ns, then 20.833/2 = 10.4165 = estimate 11 ish
 		#11;
 		assert (dut.int_osc == 1)
 			$display ("1b. Success HSOSC: after half an expected period, int_osc toggled to 1. Time: %0t.", $time);
@@ -49,52 +52,52 @@ module lab1_jl_tb();
 		switches = 4'bxx00;
 		#10;
 		assert (leds[0] == 1'b0)
-			$display ("2a. Success led0: 1/4 Switch-to-LED s=xx00, led[0] = off");
-		else $error("2a. Failure led0: 1/4 Switch-to-LED s=xx00, led[0] != off");
+			$display ("2a. Success led0: 1/4 Switch-to-LED s=xx00, led[0] = off. Time: %0t.", $time);
+		else $error("2a. Failure led0: 1/4 Switch-to-LED s=xx00, led[0] != off. Time: %0t.", $time);
 		// case 2/4
 		switches = 4'bxx01;
 		#10;
 		assert (leds[0] == 1'b1)
-			$display ("2a. Success led0: 2/4 Switch-to-LED s=xx01, led[0] = on");
-		else $error("2a. Failure led0: 2/4 Switch-to-LED s=xx01, led[0] != on");
+			$display ("2a. Success led0: 2/4 Switch-to-LED s=xx01, led[0] = on. Time: %0t.", $time);
+		else $error("2a. Failure led0: 2/4 Switch-to-LED s=xx01, led[0] != on. Time: %0t.", $time);
 		// case 3/4
 		switches = 4'bxx10;
 		#10;
 		assert (leds[0] == 1'b1)
-			$display ("2a. Success led0: 3/4 Switch-to-LED s=xx10, led[0] = on");
-		else $error("2a. Failure led0: 3/4 Switch-to-LED s=xx10, led[0] != on");
+			$display ("2a. Success led0: 3/4 Switch-to-LED s=xx10, led[0] = on. Time: %0t.", $time);
+		else $error("2a. Failure led0: 3/4 Switch-to-LED s=xx10, led[0] != on. Time: %0t.", $time);
 		// case 4/4
 		switches = 4'bxx11;
 		#10;
 		assert (leds[0] == 1'b0)
-			$display ("2a. Success led0: 4/4 Switch-to-LED s=xx11, led[0] = off");
-		else $error("2a. Failure led0: 4/4 Switch-to-LED s=xx11, led[0] != off");
+			$display ("2a. Success led0: 4/4 Switch-to-LED s=xx11, led[0] = off. Time: %0t.", $time);
+		else $error("2a. Failure led0: 4/4 Switch-to-LED s=xx11, led[0] != off. Time: %0t.", $time);
 			
 		// ## 2b. led[1]
 		// case 1/4
 		switches = 4'b00xx;
 		#10;
 		assert (leds[1] == 1'b0)
-			$display ("2b. Success led1: 1/4 Switch-to-LED s=00xx, led[1] = off");
-		else $error("2b. Failure led1: 1/4 Switch-to-LED s=00xx, led[1] != off");
+			$display ("2b. Success led1: 1/4 Switch-to-LED s=00xx, led[1] = off. Time: %0t.", $time);
+		else $error("2b. Failure led1: 1/4 Switch-to-LED s=00xx, led[1] != off. Time: %0t.", $time);
 		// case 2/4
 		switches = 4'b01xx;
 		#10;
 		assert (leds[1] == 1'b0)
-			$display ("2b. Success led1: 2/4 Switch-to-LED s=01xx, led[1] = off");
-		else $error("2b. Failure led1: 2/4 Switch-to-LED s=01xx, led[1] != off");
+			$display ("2b. Success led1: 2/4 Switch-to-LED s=01xx, led[1] = off. Time: %0t.", $time);
+		else $error("2b. Failure led1: 2/4 Switch-to-LED s=01xx, led[1] != off. Time: %0t.", $time);
 		// case 3/4
 		switches = 4'b10xx;
 		#10;
 		assert (leds[1] == 1'b0)
-			$display ("2b. Success led1: 3/4 Switch-to-LED s=10xx, led[1] = off");
-		else $error("2b. Failure led1: 3/4 Switch-to-LED s=10xx, led[1] != off");
+			$display ("2b. Success led1: 3/4 Switch-to-LED s=10xx, led[1] = off. Time: %0t.", $time);
+		else $error("2b. Failure led1: 3/4 Switch-to-LED s=10xx, led[1] != off. Time: %0t.", $time);
 		// case 4/4
 		switches = 4'b11xx;
 		#10;
 		assert (leds[1] == 1'b1)
-			$display ("2b. Success led1: 4/4 Switch-to-LED s=11xx, led[1] = on");
-		else $error("2b. Failure led1: 4/4 Switch-to-LED s=11xx, led[1] != on");
+			$display ("2b. Success led1: 4/4 Switch-to-LED s=11xx, led[1] = on. Time: %0t.", $time);
+		else $error("2b. Failure led1: 4/4 Switch-to-LED s=11xx, led[1] != on. Time: %0t.", $time);
 		// ### END OF 2. TEST IF SWITCH-TO-LED top-level assign logic works ###
 		
 		// ### 3.  Connections to Submodules: 3a. switch_to_display, 3b. counter_2_4Hz   #####################################
@@ -105,98 +108,98 @@ module lab1_jl_tb();
 		switches = 4'b0000;
 		#10;
 		assert (sev_seg == 7'b1000000)
-			$display ("Success: 7-segment display 0 passed.");
-		else $error("7-segment display 0 failed.");
+			$display ("Success: 7-segment display 0 passed. Time: %0t.", $time);
+		else $error("7-segment display 0 failed. Time: %0t.", $time);
 		// test case: 1
 		switches = 4'b0001;
 		#10;
 		assert (sev_seg == 7'b1111001)
-			$display ("Success: 7-segment display 1 passed.");
-		else $error("7-segment display 1 failed.");
+			$display ("Success: 7-segment display 1 passed. Time: %0t.", $time);
+		else $error("7-segment display 1 failed. Time: %0t.", $time);
 		// test case: 2
 		switches = 4'b0010;
 		#10;
 		assert (sev_seg == 7'b0100100)
-			$display ("Success: 7-segment display 2 passed.");
-		else $error("7-segment display 2 failed.");
+			$display ("Success: 7-segment display 2 passed. Time: %0t.", $time);
+		else $error("7-segment display 2 failed. Time: %0t.", $time);
 		// test case: 3
 		switches = 4'b0011;
 		#10;
 		assert (sev_seg == 7'b0110000)
-			$display ("Success: 7-segment display 3 passed.");
-		else $error("7-segment display 3 failed.");
+			$display ("Success: 7-segment display 3 passed. Time: %0t.", $time);
+		else $error("7-segment display 3 failed. Time: %0t.", $time);
 		// test case: 4
 		switches = 4'b0100;
 		#10;
 		assert (sev_seg == 7'b0011001)
-			$display ("Success: 7-segment display 4 passed.");
-		else $error("7-segment display 4 failed.");
+			$display ("Success: 7-segment display 4 passed. Time: %0t.", $time);
+		else $error("7-segment display 4 failed. Time: %0t.", $time);
 		// test case: 5
 		switches = 4'b0101;
 		#10;
 		assert (sev_seg == 7'b0010010)
-			$display ("Success: 7-segment display 5 passed.");
-		else $error("7-segment display 5 failed.");
+			$display ("Success: 7-segment display 5 passed. Time: %0t.", $time);
+		else $error("7-segment display 5 failed. Time: %0t.", $time);
 		// test case: 6
 		switches = 4'b0110;
 		#10;
 		assert (sev_seg == 7'b0000010)
-			$display ("Success: 7-segment display 6 passed.");
-		else $error("7-segment display 6 failed.");
+			$display ("Success: 7-segment display 6 passed. Time: %0t.", $time);
+		else $error("7-segment display 6 failed. Time: %0t.", $time);
 		// test case: 7
 		switches = 4'b0111;
 		#10;
 		assert (sev_seg == 7'b1111000)
-			$display ("Success: 7-segment display 7 passed.");
-		else $error("7-segment display 7 failed.");
+			$display ("Success: 7-segment display 7 passed. Time: %0t.", $time);
+		else $error("7-segment display 7 failed. Time: %0t.", $time);
 		// test case: 8
 		switches = 4'b1000;
 		#10;
 		assert (sev_seg == 7'b0000000)
-			$display ("Success: 7-segment display 8 passed.");
-		else $error("7-segment display 8 failed.");
+			$display ("Success: 7-segment display 8 passed. Time: %0t.", $time);
+		else $error("7-segment display 8 failed. Time: %0t.", $time);
 		// test case: 9
 		switches = 4'b1001;
 		#10;
 		assert (sev_seg == 7'b0010000)
-			$display ("Success: 7-segment display 9 passed.");
-		else $error("7-segment display 9 failed.");
+			$display ("Success: 7-segment display 9 passed. Time: %0t.", $time);
+		else $error("7-segment display 9 failed. Time: %0t.", $time);
 		// test case: 10 A
 		switches = 4'b1010;
 		#10;
 		assert (sev_seg == 7'b0001000)
-			$display ("Success: 7-segment display A (10) passed.");
-		else $error("7-segment display A (10) failed.");
+			$display ("Success: 7-segment display A (10) passed. Time: %0t.", $time);
+		else $error("7-segment display A (10) failed. Time: %0t.", $time);
 		// test case: 11 B
 		switches = 4'b1011;
 		#10;
 		assert (sev_seg == 7'b0000011)
-			$display ("Success: 7-segment display B (11) passed.");
-		else $error("7-segment display B (11) failed.");
+			$display ("Success: 7-segment display B (11) passed. Time: %0t.", $time);
+		else $error("7-segment display B (11) failed. Time: %0t.", $time);
 		// test case: 12 C
 		switches = 4'b1100;
 		#10;
 		assert (sev_seg == 7'b1000110)
-			$display ("Success: 7-segment display C (12) passed.");
-		else $error("7-segment display C (12) failed.");
+			$display ("Success: 7-segment display C (12) passed. Time: %0t.", $time);
+		else $error("7-segment display C (12) failed. Time: %0t.", $time);
 		// test case: 13 D
 		switches = 4'b1101;
 		#10;
 		assert (sev_seg == 7'b0100001)
-			$display ("Success: 7-segment display D (13) passed.");
-		else $error("7-segment display D (13) failed.");
+			$display ("Success: 7-segment display D (13) passed. Time: %0t.", $time);
+		else $error("7-segment display D (13) failed. Time: %0t.", $time);
 		// test case: 14 E
 		switches = 4'b1110;
 		#10;
 		assert (sev_seg == 7'b0000110)
-			$display ("Success: 7-segment display E (14) passed.");
-		else $error("7-segment display E (14) failed.");
+			$display ("Success: 7-segment display E (14) passed. Time: %0t.", $time);
+		else $error("7-segment display E (14) failed. Time: %0t.", $time);
 		// test case: 15 F
 		switches = 4'b1111;
 		#10;
 		assert (sev_seg == 7'b0001110)
-			$display ("Success: 7-segment display F (15) passed.");
-		else $error("7-segment display F (15) failed.");
+			$display ("Success: 7-segment display F (15) passed. Time: %0t.", $time);
+		else $error("7-segment display F (15) failed. Time: %0t.", $time);
 			
 		// ## 3b. Show that counter_2_4Hz is correctly connected to the top module (clk, reset, enable, led) ###########################
 		// clk and led can be show through questa wave forms

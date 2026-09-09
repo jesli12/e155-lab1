@@ -26,4 +26,4 @@
 
 -do "view wave"
 -do "add wave /*"
--do "run -all"
+-do "run 9000 ns"

@@ -1,5 +1,5 @@
 __design_bin_path=C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_counter_2_4Hz_tb
-incr_run_version=32768
-incr_partial_run_stats=6:0
+incr_run_version=32769
+incr_partial_run_stats=7:1
 incr_no_change_stats=0:0
 opt_data_elab=C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/testSim_lab1_counter_2_4Hz_tb/qrun.out/work/qrun_opt
