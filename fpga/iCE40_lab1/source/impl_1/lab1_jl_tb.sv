@@ -26,7 +26,7 @@ module lab1_jl_tb();
 		en = 1;
 		switches = 4'b0000;
 		// ### 1.Does the HSOSC work? ###############################################################################
-		// Visualization on questa shows HSOSC clock tick is 48 Hz
+		// Visualization on questa shows HSOSC clock tick is 48 MHz
 		
 		$display("### Test 1: Does HSOSC work? See Questa waveform screenshots, but below are sanity checks.");
 		#1; // avoiding edge by 1 ns
